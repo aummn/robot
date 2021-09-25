@@ -1,0 +1,75 @@
+MOVE
+Place 6, 5, south
+PLACe -1, 5, NORTH
+plaCE 1, 5, EAST
+PLACE 0, 0, NORTH
+MOVE
+MOVE
+MOVE
+MOVE
+MOVE
+MOVE
+MOVE
+Report
+left
+MOVE
+left
+left
+ report 
+MOVE
+ move
+ MoVe 
+ moVE 
+ MOvE 
+ Move 
+ mOVe
+ 
+REPORT
+LEFT
+ mOVe 
+ MOVE
+report
+
+LEFT 
+LEFT
+LEFT
+LEFT
+right
+  RIGHT
+REPORT
+move 
+ MOVe 
+ moVE
+ MOVE
+ movE 
+ MoVE 
+ rePORt 
+ 
+ LeFt
+ move
+ REPORT
+ right
+ RiGht
+ reporT 
+ 
+ move 
+ MOVE
+ mpve
+ MOVE 
+ move
+ MOVe
+ moVE
+ ReporT
+ 
+ MOVE 
+ lefT 
+ Move
+ mOVe 
+ REport
+ 
+ LEFT
+ MOVE 
+ MOVE1
+ rePRT
+ REPORT
+ 

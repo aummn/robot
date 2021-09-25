@@ -1,0 +1,23 @@
+PLACE, 0,0,EAST
+MOVE
+RIGHT
+REPORT
+LEFT
+PLACE 3, 2, UP
+LEFT
+move
+Place, 2, 2, south
+PLACe 2, 2, SOUTH
+MOVE
+moVE 
+  move 
+MOVE FORWARD
+LEFT
+LEFTTURN
+RIGHTTURN
+rEPORTP
+ move
+ mov e
+ MOVE 1
+REPORT
+

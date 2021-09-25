@@ -25,13 +25,14 @@ public class ReportCommand extends AbstractCommand {
 	 * Output the current robot position.
 	 * 
 	 */
-	public void execute() {
+	public Position execute() {
 		Position p = this.getTable().getRobotPosition();
 		StringBuilder sb = new StringBuilder();
 		sb.append("Robot position: x = [" + p.getX() + "] ");
 		sb.append("y = [" + p.getY() + "] ");
 		sb.append("facing = [" + p.getFacing().toString() + "]\n");
 		System.out.println(sb.toString());
+		return p;
 	}
 
 	/**

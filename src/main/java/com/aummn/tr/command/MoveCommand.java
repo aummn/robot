@@ -27,7 +27,7 @@ public class MoveCommand extends AbstractCommand {
 	 * Move the robot based on the facing and ensure it's on table.
 	 * 
 	 */
-	public void execute() {
+	public Position execute() {
 		Position p = this.getTable().getRobotPosition();
 		int x = p.getX();
 		int y = p.getY();
@@ -58,6 +58,7 @@ public class MoveCommand extends AbstractCommand {
 		} else {
 			throw new OffTableException(ErrorStatus.OFF_TABLE);
 		}
+		return p;
 	}
 	
 	/**

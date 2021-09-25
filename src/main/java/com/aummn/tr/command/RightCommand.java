@@ -25,7 +25,7 @@ public class RightCommand extends AbstractCommand {
 	 * Turn the robot right based on the current facing.
 	 * 
 	 */
-	public void execute() {
+	public Position execute() {
 		Position p = this.getTable().getRobotPosition();
 		Facing facing = p.getFacing();
 		Facing nextFacing = Facing.INVALID;
@@ -47,6 +47,7 @@ public class RightCommand extends AbstractCommand {
 			break;
 		}
 		p.setFacing(nextFacing);
+		return p;
 	}
 
 	/**

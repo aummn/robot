@@ -1,5 +1,7 @@
 package com.aummn.tr.command;
 
+import com.aummn.tr.model.Position;
+
 /**
  * This class defining the method for handling an input command. 
  *
@@ -12,7 +14,7 @@ public abstract class AbstractCommand {
 	 * Executes the command logic
 	 * 
 	 */		
-	public abstract void execute();
+	public abstract Position execute();
 	
 	/**
 	 * Gets the command name

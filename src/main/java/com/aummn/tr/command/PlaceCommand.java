@@ -29,13 +29,14 @@ public class PlaceCommand extends AbstractCommand {
 	 * 
 	 */
 	@Override
-	public void execute() {
+	public Position execute() {
 		Position p = this.getChecker().parsePlaceCommand(this.getInput());
 		if(table.isOnTheTable(p.getX(), p.getY())) {
 			table.placeRobot(p);
 		} else {
 			throw new OffTableException(ErrorStatus.OFF_TABLE);
 		}
+		return p;
 	}
 	
 	/**
