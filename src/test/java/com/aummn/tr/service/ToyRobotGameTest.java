@@ -40,7 +40,7 @@ public class ToyRobotGameTest {
 		Position p = game.start();
 		assertThat(p.getX() == 0).isTrue();
 		assertThat(p.getY() == 5).isTrue();
-		assertThat(p.getFacing() == Facing.NORTH).isTrue();
+		assertThat(p.getFacing() == Facing.EAST).isTrue();
 	}
 
 	@Test

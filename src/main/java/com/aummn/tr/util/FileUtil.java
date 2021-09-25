@@ -1,12 +1,16 @@
 package com.aummn.tr.util;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Properties;
 import java.util.stream.Collectors;
+
+import com.aummn.tr.App;
 
 /**
  * This class is for reading data file and config file. 
@@ -47,4 +51,25 @@ public class FileUtil {
 		return list;
 	}
 	
+	/**
+	 * Loads config file data
+	 * 
+	 * @param configFile a config file
+	 * 
+	 * @return a Properties object containing configs
+	 * 
+	 * @throws IOException when the file can't be found or read 
+	 * 
+	 */
+	public Properties loadConfig(String configFile) {
+		Properties prop = new Properties();
+		try (InputStream input = App.class.getClassLoader().getResourceAsStream(configFile)) {
+			// load application properties
+			prop.load(input);
+		} catch (IOException ex) {
+			System.out.println("Sorry, unable to read config: " + configFile);
+			ex.printStackTrace();
+		}
+		return prop;
+	}	
 }
