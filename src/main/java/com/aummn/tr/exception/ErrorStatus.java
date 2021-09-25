@@ -7,7 +7,11 @@ package com.aummn.tr.exception;
  * 
  */
 public enum ErrorStatus {
-	PLACE_COMMAND_PARSING_ERROR(402,"Place command can not be parsed");
+	UNSUPPORTED_COMMAND(401, "Command is not supported"),
+	PLACE_COMMAND_PARSING_ERROR(402,"Place command can not be parsed"),
+	PLACE_COMMAND_NOT_BE_EXECUTED(403,"Place command needs to be executed first"),
+	EMPTY_COMMAND(404,"Empty command is invalid"),
+	OFF_TABLE(405,"Robot is off the table");
 	
 	private final int status;
 	private final String message;
