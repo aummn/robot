@@ -89,6 +89,7 @@ Outputs
 =========================================================
 When the input file is "test_file_move_cmd.txt", the app outputs look like below:
 
+Administrator@AUMMN MINGW64 /c/dev/git/projects/robot (master)
 $ java -jar target/robot-1.0-SNAPSHOT.jar
 Valid Robot commands are: 'PLACE X, Y, NORTH', 'MOVE', 'LEFT', 'RIGHT', 'REPORT'
 
@@ -102,8 +103,6 @@ Input command: RIGHT
 Input command: RIGHT
 Input command: REPORT
 Robot position: x = [0] y = [5] facing = [East]
-
-
 
 
 Testing
